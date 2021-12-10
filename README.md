@@ -8,7 +8,7 @@ https://www.cairo-lang.org/docs/quickstart.html
 
 # Run tests
 
-- Install pip
+- Install pytest
 
         pip install pytest pytest-asyncio
 
