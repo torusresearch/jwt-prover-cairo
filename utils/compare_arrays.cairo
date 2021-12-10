@@ -1,4 +1,16 @@
 # Implementation of matcher.circom
+
+# Given two input arrays, output 1 if they match, and 0 if they do not.
+# Example 1:
+# - in[0] = [1, 2, 3, 4, 5]
+# - in[1] = [1, 2, 3, 4, 5]
+# - out = 1
+
+# Example 2:
+# - in[0] = [5, 4, 3, 2, 1]
+# - in[1] = [1, 2, 3, 4, 5]
+# - out = 0
+
 func compare_arrays(
         a_len : felt, a : felt*, b_len : felt, b : felt*) -> (res):
     assert a_len = b_len

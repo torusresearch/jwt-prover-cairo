@@ -1,4 +1,5 @@
-# Implementation of matcher.circom
+# Implementation of calculateTotal.circom
+
 # Computes the sum of the memory elements at addresses:
 #   arr + 0, arr + 1, ..., arr + (size - 1).
 func array_sum(
