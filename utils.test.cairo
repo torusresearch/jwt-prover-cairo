@@ -6,6 +6,7 @@ from utils.array_ends_with import array_ends_with
 from utils.exponent import exponent
 from utils.num_bytes_in_bits import num_bytes_in_bits
 from utils.slicer import slicer
+from utils.substring_matcher import substring_matcher
 
 @view
 func test_array_sum(arr_len : felt, arr : felt*) -> (sum):
@@ -45,4 +46,10 @@ func test_slicer{range_check_ptr}(
 
     let (res) = slicer(arr_len=arr_len, arr=arr, len=len, start_index=start_index)
     return (arr_len=arr_len, arr=res)
+end
+
+@view
+func test_substring_matcher(a_len: felt, a: felt*, b_len: felt, b: felt*) -> (res):
+    let (res) = substring_matcher(a_len=a_len, a=a, b_len=b_len, b=b)
+    return (res=res)
 end

@@ -6,12 +6,25 @@ This is a WIP implementation of [Project Kreme](https://github.com/weijiekoh/kre
 
 https://www.cairo-lang.org/docs/quickstart.html
 
-# Run tests
+# How to Run
+
+input.json contains a sample JWT and the email id. 
+
+- Compile
+        
+        cairo-compile main.cairo --output main.json
+
+- Run
+
+        cairo-run --program=main.json --print_output --layout=small --program_input=input.json
+
+# How to test
 
 - Install pytest
 
         pip install pytest pytest-asyncio
 
-- Execute tests
+- Run tests
 
         pytest
+        
