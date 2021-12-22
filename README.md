@@ -1,6 +1,6 @@
 # JWT Prover in Cairo
 
-This is a WIP implementation of [Project Kreme](https://github.com/weijiekoh/kreme) in Cairo.
+This is a WIP implementation of [Project Kreme](https://github.com/torusresearch/kreme) in Cairo.
 
 # Setting up the environment
 
