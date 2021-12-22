@@ -18,6 +18,16 @@ input.json contains a sample JWT and the email id.
 
         cairo-run --program=main.json --print_output --layout=small --program_input=input.json
 
+# How to use the SHARP prover
+
+- Submit to SHARP
+
+        cairo-sharp submit --source main.cairo --program_input input.json
+
+- Check status
+
+        cairo-sharp status <<JOB_KEY>>
+
 # How to test
 
 - Install pytest

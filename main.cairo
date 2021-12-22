@@ -275,6 +275,8 @@ func main{output_ptr : felt*, range_check_ptr}():
     %}
 
     jwt_hidden_email_address_prover(pre_image_b64_len=pre_image_b64_len, pre_image_b64=pre_image_b64, email_substr_b64_len=email_substr_b64_len, email_substr_b64=email_substr_b64, email_substr_utf8_len=email_substr_utf8_len, email_substr_utf8=email_substr_utf8, email_address_len=email_address_len, email_address=email_address, email_substr_bit_index=email_substr_bit_index, email_substr_bit_len=email_substr_bit_len, email_key_start_pos=email_key_start_pos, email_value_end_pos=email_value_end_pos, num_spaces_before_colon=num_spaces_before_colon, num_spaces_after_colon=num_spaces_after_colon, num_email_address_bytes=num_email_address_bytes)
+    
+    serialize_word(0)
 
     return ()
 end
